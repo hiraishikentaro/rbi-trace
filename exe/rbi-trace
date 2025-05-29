@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# rbi-trace コマンドラインツール
+# RubyコードからRBIファイルを生成します
+
+require_relative "../lib/rbi/trace"
+
+# CLIを実行
+cli = RBI::Trace::CLI.new
+cli.run(ARGV)
